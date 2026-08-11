@@ -1,8 +1,10 @@
 # LoRa заметки
 
 author: Krey81 \
-source: [src](https://github.com/Krey81/lora) \
+source: [src](https://github.com/Krey81/lora/blob/main/notes/README.md) \
 tags: lora
+
+*документ рассчитан на рендеринг средствами VSCode с плагинами. markdown и деривативы очень быстро развиваются, не все успевают*
 
 ## Частоты регионов (сортировка с севера на юг)
 
@@ -15,6 +17,31 @@ tags: lora
 | Москва и область | MOW          | meshcore   | 868.731 | 62.5   | 7   | 7   | Хэш пути 2 байта               | https://meshcoretel.ru/ru/MOW                                               |
 | Тула             | TYA          | meshcore   | 868.731 | 62.5   | 8   | 7   | Хэш пути 2 байта               | https://meshcoretel.ru/ru/TYA/map                                           |
 | Рязань           | RZN          | meshcore   | 868.880 | 62.5   | 9   | 5   | Хэш пути 2 байта               | https://meshcoretel.ru/ru/RZN/map                                           |
+
+## Запланированные связи регионов (как хотелось бы) 
+
+```mermaid
+---
+title: Рыба для графики
+---
+flowchart TD
+LED-.->Tver
+subgraph Tver[Тверь]
+    TVE
+    KLD
+end
+TVE-.->KLN
+subgraph KLN
+    Высоковск
+    Майданово
+end
+subgraph MOW
+    Пешки
+end
+KLN-.->MOW-.->TYA-.->RZN
+
+```
+
 
 ## Термины
 
@@ -111,22 +138,37 @@ tags: lora
 
 # Ссылки
 
-## Вендоры
+## Вендоры (сортировка по году основания бренда имли компании)
 
 | Брэнд                     | Год  | Компания                                           | Страна, происхождение     | КВН  | Ссылка                                         |
 | ---                       | ---  | ---                                                | ---                       | ---  | ---                                            |
-| Semtech                   | 1960 | Semtech Semiconductor, Semtech Corporation         | USA/California            | +    | https://www.semtech.com                        |
-| LILYGO                    |      | Shenzhen Xinyuan Electronic Technology Co., Ltd    | CN/Guangdong              |      | https://lilygo.cc                              |
-| Heltec                    | -    | *зонтичный брэнд*                                  | CN/Sichuan                |      | https://heltec.org                             |
-| EBYTE                     | 2012 | Chengdu Ebyte Electronic Technology Co., Ltd       | CN/Sichuan                |      | https://www.cdebyte.com                        | 
-| Vega                      | 1996 | Вега-Абсолют                                       | RU/NSK                    | -    | https://iotvega.com                            |
 | BOSCH                     | 1886 | BOSCH                                              | DE                        | +    | https://www.bosch-sensortec.com                |
-| ClimateGuard              | 2018 | *н/д*                                              | RU/MSK                    | -    | https://climateguard.ru                        |
-| TI                        | 1930 | Texas Instruments                                  | US/TX                     |      | https://www.ti.com                             |
+| TI                        | 1930 | Texas Instruments                                  | US/TX                     | +    | https://www.ti.com                             |
+| Semtech                   | 1960 | Semtech Semiconductor, Semtech Corporation         | USA/CA                    | +    | https://www.semtech.com                        |
+| ADI                       | 1965 | Analog Devices, Inc.                               | US/MA                     | -    | https://www.analog.com                         |
 | Maxim                     | 1983 | Maxim Integrated Products, Inc                     | US                        | sold | https://www.maximintegrated.com                |
-| ADI                       | 1965 | Analog Devices, Inc.                               | US/MA                     |      | https://www.analog.com                         |
-| Quectel                   | 2010 | Quectel                                            | CN/Guangdong              | ?    | https://www.quectel.com                        |
-| U-blox                    | 1997 | u-blox AG                                          | CH (SWISS)                | -    | https://www.u-blox.com/                        |
+| Vega                      | 1996 | Вега-Абсолют                                       | RU/NSK                    | -    | https://iotvega.com                            |
+| U-blox                    | 1997 | u-blox AG                                          | CH (SWISS)                | +    | https://www.u-blox.com/                        |
+| Quectel                   | 2010 | Quectel Wireless Solutions Co., Ltd.               | CN/Shanghai               | -    | https://www.quectel.com                        |
+| EBYTE                     | 2012 | Chengdu Ebyte Electronic Technology Co., Ltd       | CN/Sichuan                | -    | https://www.cdebyte.com                        |
+| Heltec                    | 2013 | Chengdu Heltec Automation Technology Co., Ltd      | CN/Sichuan                | +    | https://heltec.org                             |
+| ClimateGuard              | 2018 | *н/д*                                              | RU/MSK                    | -    | https://climateguard.ru                        |
+| LILYGO                    |      | Shenzhen Xinyuan Electronic Technology Co., Ltd    | CN/Guangdong              | -    | https://lilygo.cc                              |
+
+```mermaid
+timeline
+    1886 : BOSCH
+    1930 : TI
+    1960 : Semtech
+    1965 : ADI
+    1983 : Maxim
+    1996 : Vega
+    1997 : U‑blox
+    2010 : Quectel
+    2012 : EBYTE
+    2013 : Heltec
+    2018 : ClimateGuard
+```
 
 ## Статьи
 
@@ -142,6 +184,7 @@ tags: lora
 | Дата       | Кратко                       | Комментарий                                                                                                   |
 | ---        | ---                          | ---                                                                                                           |
 | 2026-08-11 | начальная версия, рыба       | упомянул почти все, с чем сталкивался лично, зачаток структуры                                                |
+| 2026-08-11 | графика                      | добавил графику для примера (граф и таймлайн), уточнил вендоров
 
 # Контакты
 
