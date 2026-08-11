@@ -146,14 +146,14 @@ KLN-.->MOW-.->TYA-.->RZN
 | TI                        | 1930 | Texas Instruments                                  | US/TX                     | +    | https://www.ti.com                             |
 | Semtech                   | 1960 | Semtech Semiconductor, Semtech Corporation         | USA/CA                    | +    | https://www.semtech.com                        |
 | ADI                       | 1965 | Analog Devices, Inc.                               | US/MA                     | -    | https://www.analog.com                         |
-| Maxim                     | 1983 | Maxim Integrated Products, Inc                     | US                        | sold | https://www.maximintegrated.com                |
+| ~~Maxim~~                 | 1983 | ~~Maxim Integrated Products, Inc~~                 | US                        | sold | https://www.maximintegrated.com                |
 | Vega                      | 1996 | Вега-Абсолют                                       | RU/NSK                    | -    | https://iotvega.com                            |
 | U-blox                    | 1997 | u-blox AG                                          | CH (SWISS)                | +    | https://www.u-blox.com/                        |
 | Quectel                   | 2010 | Quectel Wireless Solutions Co., Ltd.               | CN/Shanghai               | -    | https://www.quectel.com                        |
+| LILYGO                    | 2012 | Shenzhen Xinyuan Electronic Technology Co., Ltd    | CN/Guangdong              | -    | https://lilygo.cc                              |
 | EBYTE                     | 2012 | Chengdu Ebyte Electronic Technology Co., Ltd       | CN/Sichuan                | -    | https://www.cdebyte.com                        |
 | Heltec                    | 2013 | Chengdu Heltec Automation Technology Co., Ltd      | CN/Sichuan                | +    | https://heltec.org                             |
 | ClimateGuard              | 2018 | *н/д*                                              | RU/MSK                    | -    | https://climateguard.ru                        |
-| LILYGO                    |      | Shenzhen Xinyuan Electronic Technology Co., Ltd    | CN/Guangdong              | -    | https://lilygo.cc                              |
 
 ```mermaid
 timeline
@@ -165,9 +165,10 @@ timeline
     1996 : Vega
     1997 : U‑blox
     2010 : Quectel
-    2012 : EBYTE
+    2012 : LILYGO : EBYTE
     2013 : Heltec
     2018 : ClimateGuard
+    2021 : Maxim поглощен ADI
 ```
 
 ## Статьи
