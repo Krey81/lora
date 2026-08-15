@@ -1,10 +1,22 @@
 # LoRa заметки
 
 author: Krey81 \
-source: [src](https://github.com/Krey81/lora/blob/main/notes/README.md) \
-tags: lora
+source: [src](https://github.com/Krey81/lora/blob/main/notes/README.md) - там следить за обновлениями и предлагать исправления \
+tags: #lora #meshtastic #meshcore #meshcortel
 
 *документ рассчитан на рендеринг средствами VSCode с плагинами. markdown и деривативы очень быстро развиваются, не все успевают*
+
+## История изменений
+
+| № п/п | Дата       | Кратко                       | Комментарий                                                                                                   |
+| ---   | ---        | ---                          | ---                                                                                                           |
+| 1     | 2026-08-11 | начальная версия, рыба       | упомянул почти все, с чем сталкивался лично, зачаток структуры                                                |
+| 2     | 2026-08-11 | графика                      | добавил графику для примера (граф и таймлайн), уточнил вендоров                                               |
+| 3     | 2026-08-11 | fix LR1* semtech             | поправил LR1* модули semtech, добавил S, L bands                                                              |
+| 4     | 2026-08-11 | bus                          | дозаполнил пропущенные поля шин                                                                               |
+| 5     | 2026-08-14 | регионы мешкортеля           | добавил в граф саб-регионы mow мешкортеля                                                                     |
+| 6     | 2026-08-15 | heltec v4                    | добавил информацию по heltec v4                                                                               |
+| 7     | 2026-08-15 | команды                      | добавил основной список команд meshcore, очевидно, что файл нужно резать на более мелкие и менять структуру   | 
 
 ## Частоты регионов (сортировка с севера на юг)
 
@@ -18,11 +30,20 @@ tags: lora
 | Тула             | TYA          | meshcore   | 868.731 | 62.5   | 8   | 7   | Хэш пути 2 байта               | https://meshcoretel.ru/ru/TYA/map                                           |
 | Рязань           | RZN          | meshcore   | 868.880 | 62.5   | 9   | 5   | Хэш пути 2 байта               | https://meshcoretel.ru/ru/RZN/map                                           |
 
-## Запланированные связи регионов (как хотелось бы) 
+
+## Регионы мешкортеля
+*Пути из Санкт-Петербурга в Рязань*
+
+```mermaid
+flowchart LR
+    LED-->TVE-->MOW-->TYA-->RZN
+```
+
+[Карта регионов мешкортеля](https://yandex.ru/maps/213/moscow/?ll=37.737793%2C55.750593&mode=usermaps&source=constructorLink&um=constructor%3A973aba73f7424656857386e6b8c30fd69d3b8f82fdc54345e7284d40ad47a277&z=8)
 
 ```mermaid
 ---
-title: Рыба для графики
+title: Рагионы, подробнее
 ---
 flowchart TD
 LED-.->Tver
@@ -30,18 +51,40 @@ subgraph Tver[Тверь]
     TVE
     KLD
 end
-TVE-.->KLN
-subgraph KLN
-    Высоковск
-    Майданово
+TVE-.->klin
+subgraph mow
+    subgraph mosobl
+        subgraph mosobl-sever[sever]
+            subgraph klin
+                Высоковск
+                Майданово
+            end
+            Дмитров
+            Волоколамск
+            Солнечногорск
+            Зеленоград
+            Химки
+        end
+        mosobl-yug[yug]
+        mosobl-vostok[vostok]
+        mosobl-zapad[zapad]
+        mosobl-severo-vostok[severo-vostok]
+        subgraph msk
+            cao
+            sao
+            svao
+            vao
+            uvao
+            uao
+            uzao
+            zao
+            szao
+        end
+    end 
 end
-subgraph MOW
-    Пешки
-end
-KLN-.->MOW-.->TYA-.->RZN
+mow-.->TYA-.->RZN
 
 ```
-
 
 ## Термины
 
@@ -51,13 +94,19 @@ KLN-.->MOW-.->TYA-.->RZN
 | **SF** *(Spreading Factor)* | **Коэффициент расширения** | Определяет, **сколько бит информации кодируется в одном символе** (чирпе). Чем выше SF, тем больше бит в символе и тем дольше он длится. | **Главный регулятор дальности и скорости.** Увеличение SF **увеличивает дальность** и помехоустойчивость, но **сильно снижает скорость** передачи данных. |
 | **CR** *(Coding Rate)* | **Скорость кодирования** | Это **доля полезных данных** в общем потоке. Остальная часть — это избыточные биты для **обнаружения и исправления ошибок** (Forward Error Correction, FEC). | **Влияет на надежность.** Более высокий CR (например, `4/8`) добавляет больше избыточности, что **улучшает помехоустойчивость**, но **снижает полезную скорость** передачи. |
 | **BW** *(Bandwidth)* | **Ширина полосы** | Это **ширина частотного канала**, которую занимает сигнал | Увеличение BW **повышает скорость** передачи данных, но **ухудшает чувствительность** приемника, сокращая дальность. |
+| RSSI              | Received signal strength                          | уровень сигнала                                                               | - |
+| SNR               | Signal/noise ratio                                | отношение сигнал/шум                                                          | - |
 | IMU               |                                                   | инерциальный датчик                                                           | - |
 | Dead Reckoning    | -                                                 | позиционирование при потере сигнала GNSS по данным от IMU                     | - |
 | Sensor Fusion     | -                                                 | IMU + данные с датчиков приводов                                              | - |
 | NMEA              | National Marine Electronics Association           | стандарт передачи данных от спутниковых приемников в виде текста              | - |
 | RTK               | Real-Time Kinematic                               | технология повышения точности спутниковой навигации                           | - |
 | RTCM              | Radio Technical Commission for Maritime Services  | протоколы для RTK, бинарные                                                   | - |
+| LNA               | Low Noise Amplifier                               | малошумящий усилитель | Когда он включён, устройство лучше слышит слабые сигналы от удалённых узлов сети |
+| FEM               | Front-End Module                                  | внешний модуль усиления сигнала в *трактах RX/TX* | дополнительно усиливает сигналы RX и TX и управляется программно |
 
+RX: ANT → [FEM: T/R Switch → LNA] → SX1262 (внутренний LNA) → Demodulator \
+TX: Demodulator → SX1262 (внутренний PA) → [FEM: PA → T/R Switch] → ANT
 
 ## Контекст, другие стандарты беспроводной связи
 
@@ -94,6 +143,42 @@ KLN-.->MOW-.->TYA-.->RZN
 | **Загрузка спектра** | **Перегружен**, получение лицензий сложнее | Менее загружен |
 
 # Hardware
+
+## HelTec
+
+### WiFi LoRa 32 V4
+
+Features
+
+* Base on ESP32-S3R8 & SX-1262, supports Wi-Fi b/g/n, BLE, and LoRa communication
+* 2/8MB PSRAM and 16MB external Flash, more suitable for UI and complex system
+* High-power version with LoRa transmission power increased to 28±1dBm
+* Form factor and pin compatibility with WiFi LoRa 32 V3
+* PC casing protects the screen and integrates FPC 2.4G antenna
+* SH1.25-8Pin GNSS interface
+* SH1.25-2P solar panel interface
+* Optimized lithium battery management
+* USB Type-C interface with integrated voltage regulation, ESD protection, short-circuit protection, and RF isolation design
+* Power consumption is less than 20μA
+
+General specifications
+
+| Parameters            | Description                                                           |
+| ---                   | ---                                                                   |
+| Master Chip           | ESP32-S3R8                                                            |
+| LoRa Chip             | SX1262                                                                |
+| Frequency             | 433~510 MHz, 863~928 MHz                                              |
+| Max. TX Power         | 21±1dBm, 28±1 dBm2                                                    |
+| Wi-Fi                 | 802.11 b/g/n, up to 150Mbps                                           |
+| Bluetooth             | Bluetooth LE, Bluetooth 5, Bluetooth mesh                             |
+| OLED                  | SSD1315(0.96Inch, 128*64 resolution)                                  |
+| Power Supply          | 5V@USB/Solar, 3.3-4.2V@Battery                                        |
+| Hardware Resource     | 7xADC1 + 2xADC2, 7xTouch, 3xUART, 2xI2C, 2xI2S, 4xSPI                 |
+| Memory                | 384KB ROM; 512KB SRAM; 16KB RTC SRAM; 16MB Flash; 8MB PSRAM           |
+| Interface             | USB Type-C; SH1.25-2P lithium battery interface; SH1.25-2P solar panel interface; 2*IPEX1.0 ANT(LoRa&2.4G); 2*18*2.54 Header Pins, 2*2*2.54 Header Pins |
+| Operating Temperature | -40~85℃(OLED operating temperature: -40~ 70°C)                       |
+| Dimensions 51.7       | 51.7 * 25.4* 10.7mm                                                   |
+
 
 ## Модули
 
@@ -145,7 +230,241 @@ KLN-.->MOW-.->TYA-.->RZN
 | 4 | Нода (Plus) | **LR2021** | Sub-GHz, 2.4 ГГц, S-Band | +22 дБм | –141.5 дБм | Флагман, скорость FLRC до **2.6 Мбит/с**, есть на ali |
 | 4 | Нода (Plus) | **LR2022** | Sub-GHz, 2.4 ГГц | Данных нет | Данных нет | Двухдиапазонный |
 
-# Ссылки
+# Настройка репитера 
+*на примере прошивки heltec_v4_repeater_mqtt-v1.16.0-vbart-meshcoretel-v1.2.0-1817248-merged.bin*
+
+1. Включаем (или жмакаем RST) с зажатой PRG
+2. Прошиваем через флешер https://meshcoretel.ru/ru/flasher
+3. Сбрасываем
+4. Открываем конфигуратор https://config.meshcore.io/
+5. Базовая настройка в гуе
+6. Проверяем 2-х байтовый префикс по сайту мешкортеля. Если занят выбираем другой, генерируем и прописываем новую связку ключей
+7. Дополнительная настройка в консоли
+
+Ниже настройки в консоли без учета настроек в веб
+
+```
+set name <personal>
+set owner.info <personal>
+set lat <personal>
+set lon <personal>
+set wifi.ssid <censored>
+set wifi.pwd <censored>
+
+set radio 868.731018,62.5,7,7 
+set path.hash.mode 1
+set tx 20
+set radio.rxgain off
+set radio.fem.rxgain off
+powersaving off
+
+set loop.detect minimal
+set txdelay 0.5
+set direct.txdelay 0.3
+set multi.acks 1
+set flood.advert.interval 24
+set advert.interval 60
+set flood.max 7
+set flood.max.unscoped 32
+set flood.max.advert 16
+
+region allowf *
+region def ru mow mosobl sever klin
+region home mow
+region save
+
+set mqtt.iata MOW
+set mqtt.tx off
+
+reboot
+
+set web off
+
+```
+
+# Справочник настроек MeshCore
+
+## Устройство (управление, информация)
+
+| Команда               | Действие                              | Описание                                                                              |
+| ---                   | ---                                   | ---                                                                                   |
+| name                  | наименование устройства               | 23 байта с указанием локации, 31 без локации                                          |
+| owner.info            | информация о владельце устройства     | пайп '|' для перевода строки                                                          |
+| role                  | роль устройства                       |                                                                                       |
+| reboot                | перезагрузка (reset)                  | перезагружает устройство в нормальный операционный режим                              |
+| poweroff, shutdown    | выключение                            | завершение работы, прекращение подачи питания (уход в глубокий сон)                   | 
+| ver                   | информация о версии                   | версия прошивки, прочее                                                               |
+| board                 | информация о железе                   | наименование, прочее                                                                  |
+| powersaving           | режим энергосбережения                | on/off только для Репитеров (и производных) - устройство спит между передачами        |
+| adc.multiplier        | калибровка батареи                    | коэффициент 0.0-10.0                                                                  |
+
+## Время
+
+| Команда               | Действие                              | Описание                                                                              |
+| ---                   | ---                                   | ---                                                                                   |
+| clkreboot             | Reset the clock and reboot            |                                                                                       |
+| clock sync            | Sync the clock with the remote device |                                                                                       |
+| clock                 | возвращает текущее время в UTC        |                                                                                       |
+| time <epoch_seconds>  | установка времени                     | Unix epoch time                                                                       |
+| gps sync              | установка времени по GPS приемнику    | установка времени устройства по внутреннему GPS(GNSS) приемнику                       |
+
+## Радио
+
+| Команда               | Действие                              | Описание                                                                              |
+| ---                   | ---                                   | ---                                                                                   |
+| radio                 | параметры частоты и модуляции         | <freq>,<bw>,<sf>,<cr>                                                                 |
+| tempradio             | тоже, но на заданное время            | <freq>,<bw>,<sf>,<cr>,<timeout_mins> удобно для экспериментов, что бы не терять связь |
+| freq                  | частота                               | MHz                                                                                   |
+| dutycycle             | скважность на передачу                | (1-100) проценты                                                                      |
+| af                    | ожидание после передачи               | сек (0-9), Airtime factor                                                             |
+| radio.rxgain          | усиление приема в LNA модема          | для SX12xx and LR1110, v1.14.1+                                                       |
+| radio.fem.rxgain      | усиление приема в FEM устройства      | on/off                                                                                |
+| rxdelay               | задержка приема                       | сек (0-20), ожидание приема дублей пакета от более сильного источника                 |
+| tx                    | мощность на передачу                  | dBm                                                                                   |
+| radio.fem.txgain      | усиление передачи в FEM устройства    | on/off                                                                                |
+| txdelay               | задержка передачи транзитных пакетов  | коэффициент, дефолт 0.5                                                               | 
+| direct.txdelay        | задержка передачи директ-пакетов      | коэффициент, дефолт 0.2                                                               | 
+| int.thresh            | порог интерференции                   | коэффициент, дефолт 0.0                                                               |
+| cad                   | слушать канал перед отправкой         | on/off                                                                                |
+| agc.reset.interval    | AGC Reset Interval                    | в секундах, кратно 4                                                                  |
+| multi.ack             | Multi-Acks                            | 0-выкл, 1 вкл, дефолт 0                                                               |
+
+## Анонсы
+
+| Команда               | Действие                              | Описание                                                                              |
+| ---                   | ---                                   | ---                                                                                   |
+| advert                | отправить flood-анонс                 | отправляет анонс всем, кто услышет с дальнейшем распространением по сети              |
+| advert.zerohop        | отправить анонс без распространения   | отправляет анонс всем, кто услышет                                                    |
+| flood.advert.interval | анонсирование с распостранением       | часы (3-168), интервал анонсирования с распространением по сети                       |
+| advert.interval       | анонсирование без распространения     | минуты (60-240), кратно 2                                                             |
+| flood.max.advert      | макс хопов для объявления             | 0-64, default 8                                                                       |
+
+## Исследование сети
+
+| Команда               | Действие                              | Описание                                                                              |
+| ---                   | ---                                   | ---                                                                                   |
+| discover.neighbors    | ищет прямых соседей                   | отправляет широковещательный запрос информации ко всем, кто услышит, без пересылки    | 
+| neighbors             | информация об известных соседях       | возвращает несколько последних услышанных анонсов                                     | 
+| neighbor.remove       | удаляет из памяти запись о соседе     | аргумент <pubkey_prefix>                                                              |
+
+## Локация
+
+| Команда               | Действие                              | Описание                                                                              |
+| ---                   | ---                                   | ---                                                                                   |
+| lat                   | широта                                | Десятичные градусы                                                                    |
+| lon                   | долгота                               | Десятичные градусы                                                                    |
+| gps                   | внутренний приемник GNSS              | gps - статус, on/off                                                                  |
+| gps sync              | установка времени по GPS приемнику    | установка времени устройства по внутреннему GPS(GNSS) приемнику                       |
+| gps setloc            | установка позиции устройства по GPS   | установка позиции устройства по текущим координатам от модуля GPS (GNSS)              |
+| gps advert            | политика распространения координат    | none, share, prefs                                                                    |
+
+
+
+## Маршрутизация и регионы
+
+*Регионы в MeshCore позволяют пользователю задавать область доставки широковещательных сообщений, чтобы они достигали только нужных узлов сети. Это снижает нагрузку на ретрансляторы, уменьшает расход ограниченного эфирного ресурса и повышает эффективность сети. В результате репитеры остаются более доступными, а сеть обслуживает больше пользователей без лишних задержек и перегрузок.*
+
+**Принцип действия:** Вместо того чтобы сообщение транслировалось по всей необъятной сети до достижения лимита «прыжков» (hop limit), оно снабжается специальным региональным тегом в заголовке пакета. Репитеры (repeaters) пересылают сообщение дальше только в том случае, если их конфигурация явно разрешает работу с данным регионом. Если область не выбрана (или задан символ *), сообщение считается глобальным и пересылается всеми ретрансляторами для обеспечения обратной совместимости.
+
+
+| Команда               | Действие                              | Описание                                                                              |
+| ---                   | ---                                   | ---                                                                                   |
+| repeat                | включает или выключает пересылку      |                                                                                       |
+| path.hash.mode        | длина префикса пути                   | 0 = 1 байт, 1 = 2 байта, 2 = 3 байта                                                  |
+| loop.detect           | уровень детеккции петель              | off, minimal, strict                                                                  |
+| flood.max.unscoped    | макс хопов для флуда без региона      | 0-64                                                                                  |
+| flood.max             | макс хопов для флуда с регионом       | 0-64                                                                                  |
+| flood.max.advert      | макс хопов для объявления             | 0-64, default 8                                                                       |
+| region allowf         | разрешить флуд для указанного региона | region allowf <name>, name - регион или * для всех                                    |
+| region denyf          | запретить флуд для указанного региона | region denyf <name>,  name - регион или * для всех                                    |
+| region get            | получить информацию по региону        | region get <name>                                                                     |
+| region home           | установка домашнего региона           | region home <name>                                                                    |
+| region default        | установка региона по-умолчанию        | region default {name|<null>}                                                          |
+| region put            | указание нового региона               | region put <name> [parent_name]                                                       |
+| region remove         | удаление региона                      | region remove <name>                                                                  |
+| region def            | указание регионов ноды                | указание вложенности регионов устройства одной строкой (вместо множества команд put)  | 
+| region                | получить конфигурации регионов        |                                                                                       |
+| region load           | массовая загрузка регионов            | region load <name> flood_flag                                                         |
+| region save           | сохранение конфигурации регионов      | сохранение изменений в конфигурации регионов с момента загрузки                       |
+| region list           | получение списка регионов устройства  | region list <filter>, filter: allowed|denied                                          |
+
+пример настройки репитера для г. Клин
+
+```
+> region
+* F
+ ru F
+  mow^ F
+   mosobl F
+    sever F
+     klin F
+```
+
+```mermaid
+flowchart LR
+    ru-->mow-->mosobl-->sever-->klin
+```
+
+### Ссылки
+
+[Про регионы (MSK - Беспорядочные связи)](https://t.me/meshcore_rulang/112770)
+
+[Про регионы (meshcore-русскоязычное сообщество)](https://wiki.ionode.ru/regions_setup.md)
+
+[Про регионы (на сайте документации мешкора)](https://docs.meshcore.io/cli_commands/#region-management-v110)
+
+
+## Сенсоры
+
+| Команда               | Действие                              | Описание                                                                              |
+| ---                   | ---                                   | ---                                                                                   |
+| sensor list           | возвращает список сенсоров            | sensor list [start], start default 0, ret key-value                                   |
+| sensor get            | значение сенсора                      | sensor get <key> - sensor set <key> <value>                                           |
+
+## Метрики
+
+| Команда               | Действие                              | Описание                                                                              |
+| ---                   | ---                                   | ---                                                                                   |
+| clear stats           | очистка метрик                        | забываем все, что было и начинаем вести новые отсчеты с нуля                          |
+| stats-core            | системная статистика                  | батарея, время работы, длина очередей и флаги                                         |
+| stats-radio           | статистика эфира                      | уровень шума, последний RSSI/SNR, время работы в эфире, ошибки                        | 
+| stats-packets         | статистика пакетов                    | кол-во принятых и отправленных пакетов                                                |
+
+## Журналы (логирование)
+
+| Команда               | Действие                              | Описание                                                                              |
+| ---                   | ---                                   | ---                                                                                   |
+| log start             | начинает запись принятых пакетов      | нужно хранилище для записи (SD-карта)                                                 |
+| log stop              | останавливает запись                  |                                                                                       |
+| log erase             | стирает журнылы                       |                                                                                       |
+| log                   | выводит в терминал записи журналов    |                                                                                       |
+
+## Аутентификация и права
+
+| Команда               | Действие                              | Описание                                                                              |
+| ---                   | ---                                   | ---                                                                                   |
+| public.key            | публичная часть ключа                 | (hex)                                                                                 |
+| prv.key               | приватная часть ключа                 | 64 шеснадцатиричных знака (hex)                                                       |
+| password              | установка пароля администратора       |                                                                                       |
+| guest.password        | установка гостевого пароля            |                                                                                       |
+| setperm               | установка ACL                         | setperm <pubkey> <permissions>                                                        |
+| get acl               | текущий ACL                           | посмотреть текущий список доступа                                                     |
+
+
+## Прошивка
+
+| Команда               | Действие                              | Описание                                                                              |
+| ---                   | ---                                   | ---                                                                                   |
+| start ota             | обновление прошивки по-воздуху        | обновление прошивки путем передачи файла                                              |
+| erase                 | сброс настроек                        | стирает все настройки, возврат к заводскому состоянию                                 |
+
+## Bridge (When bridge support is compiled in)
+
+- не попадались
+
+## Ethernet (when Ethernet support is compiled in)
+
+- не попадались
 
 ## Вендоры (сортировка по году основания бренда имли компании)
 
@@ -188,16 +507,17 @@ timeline
 
 [Meshtastic vs. MeshCore](https://buffalora.org/2026/02/24/meshtastic-vs-meshcore)
 
-# История изменений
-
-| № п/п | Дата       | Кратко                       | Комментарий                                                                                                   |
-| ---   | ---        | ---                          | ---                                                                                                           |
-| 1     | 2026-08-11 | начальная версия, рыба       | упомянул почти все, с чем сталкивался лично, зачаток структуры                                                |
-| 2     | 2026-08-11 | графика                      | добавил графику для примера (граф и таймлайн), уточнил вендоров                                               |
-| 3     | 2026-08-11 | fix LR1* semtech             | поправил LR1* модули semtech, добавил S, L bands                                                              |
-| 4     | 2026-08-11 | bus                          | дозаполнил пропущенные поля шин                                                                               |
+[CLI commands](https://docs.meshcore.io/cli_commands)
 
 # Контакты
 
 Krey81 <Иванов Р.В> [@Krey81](https://t.me/krey81), krey@irinium.ru
+
+## Мои ноды
+
+| Протокол  | Hex       | Name                      | Description                                   |
+| ---       | ---       | ---                       | ---                                           |
+| meshcore  | AABD4C98  | Krey81                    | Мобильный компаньон LILYGO T-Echo             |
+| meshcore  | 09739C3E  | MO Golikovo-1 360         | Наблюдатель рядом с д. Голиково (Клин)        |
+| meshtasic | !3a38239a | MO Golikovo-2 360         | Meshtastic CLIENT-BASE (временный)            |
 
