@@ -1,4 +1,4 @@
-# LoRa meshcore - заметки
+# LoRa Meshcore - заметки
 
 author: Krey81 \
 source: [src](https://github.com/Krey81/lora/blob/main/notes/README.md) - там следить за обновлениями и предлагать исправления \
@@ -30,7 +30,7 @@ Q: Что делают пользователи Meshtastic, когда видя�
 A: Отвечают в телеге
 ```
 
-[на основе "Сравнение Meshtastic и MeshCore" от Василиск](https://images.boosty.to/image/66be15b6-63ac-40fc-ab70-18c43177c4dd?change_time=1769223026&mw=575)
+[на основе "Сравнение Meshtastic и MeshCore" от Василиск](https://boosty.to/vasilisk_lab/posts/cd5e1a00-2cdc-4a38-ae9a-322775a4dcd3)
 
 | Характеристика | Meshtastic | Meshcore |
 | -------------- | ---------- | -------- |
