@@ -1,4 +1,4 @@
-# LoRa заметки
+# LoRa meshcore - заметки
 
 author: Krey81 \
 source: [src](https://github.com/Krey81/lora/blob/main/notes/README.md) - там следить за обновлениями и предлагать исправления \
@@ -21,6 +21,22 @@ tags: #lora #meshcore #meshcoretel
 | 7     | 2026-08-15 | команды                         | добавил основной список команд meshcore, очевидно, что файл нужно резать на более мелкие и менять структуру |
 | 8     | 2026-08-20 | доп инфа                        | добавил инфы и фоток по железу, дополнил термины                                                            |
 | 9     | 2026-08-31 | доп инфа, небольшой рефакторинг | в связи дополнением справочной информации, решил начать небольшой рефакторинг                               |
+| 10    | 2026-09-03 | доп инфа T096                   | добавил инфу о Heltec T096, в связи с его доставкой                                                         |
+
+## Отличия от Meshtastic
+
+```
+Q: Что делают пользователи Meshtastic, когда видят сообщение в LongFast? 
+A: Отвечают в телеге
+```
+
+[на основе "Сравнение Meshtastic и MeshCore" от Василиск](https://images.boosty.to/image/66be15b6-63ac-40fc-ab70-18c43177c4dd?change_time=1769223026&mw=575)
+
+| Характеристика | Meshtastic | Meshcore |
+| -------------- | ---------- | -------- |
+
+to be filled...
+
 
 # Настройка репитера/наблюдателя
 *на примере прошивки heltec_v4_repeater_mqtt-v1.16.0-vbart-meshcoretel-v1.2.0-1817248-merged.bin*
@@ -382,8 +398,6 @@ General specifications
 
 ### HelTec WiFi LoRa 32 V4
 
-Features
-
 * Base on ESP32-S3(R8) & SX-1262, supports Wi-Fi b/g/n, BLE, and LoRa communication
 * 2/8MB (для R8) PSRAM and 16MB external Flash
 * High-power version with LoRa transmission power increased to 28±1dBm
@@ -397,22 +411,51 @@ Features
 
 General specifications
 
-| Parameters            | Description                                                               |
-| ---                   | ---                                                                       |
-| Master Chip           | ESP32-S3R8                                                                |
-| LoRa Chip             | SX1262                                                                    |
-| Frequency             | 433~510 MHz, 863~928 MHz                                                  |
-| Max. TX Power         | 21±1dBm, 28±1 dBm2                                                        |
-| Wi-Fi                 | 802.11 b/g/n, up to 150Mbps                                               |
-| Bluetooth             | Bluetooth LE, Bluetooth 5, Bluetooth mesh                                 |
-| OLED                  | SSD1315(0.96Inch, 128*64 resolution)                                      |
-| Power Supply          | 5V@USB/Solar, 3.3-4.2V@Battery                                            |
-| Hardware Resource     | 7xADC1 + 2xADC2, 7xTouch, 3xUART, 2xI2C, 2xI2S, 4xSPI                     |
-| Memory                | 384KB ROM; 512KB SRAM; 16KB RTC SRAM; 16MB Flash; PSRAM 2/8MB( для R8)    |
+| Parameters            | Description                                                                                                                                             |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Master Chip           | ESP32-S3R8                                                                                                                                              |
+| LoRa Chip             | SX1262                                                                                                                                                  |
+| Max. TX Power         | 28±1 dBm                                                                                                                                                |
+| Wi-Fi                 | 802.11 b/g/n, up to 150Mbps                                                                                                                             |
+| Bluetooth             | Bluetooth LE, Bluetooth 5, Bluetooth mesh                                                                                                               |
+| OLED                  | SSD1315 0.96 128*64                                                                                                                                     |
+| Power Supply          | 5V@USB/Solar, 3.3-4.2V@Battery                                                                                                                          |
+| Hardware Resource     | 7xADC1 + 2xADC2, 7xTouch, 3xUART, 2xI2C, 2xI2S, 4xSPI                                                                                                   |
+| Memory                | 384KB ROM; 512KB SRAM; 16KB RTC SRAM; 16MB Flash; PSRAM 2/8MB( для R8)                                                                                  |
 | Interface             | USB Type-C; SH1.25-2P lithium battery interface; SH1.25-2P solar panel interface; 2*IPEX1.0 ANT(LoRa&2.4G); 2*18*2.54 Header Pins, 2*2*2.54 Header Pins |
-| Operating Temperature | -40~85℃(OLED operating temperature: -40~ 70°C)                       |
-| Dimensions 51.7       | 51.7 * 25.4* 10.7mm                                                   |
+| Operating Temperature | -40~85℃(OLED operating temperature: -40~ 70°C)                                                                                                         |
+| Dimensions 51.7       | 51.7 * 25.4* 10.7mm                                                                                                                                     |
 
+### HelTec T096
+
+Main Features
+
+* Supports Bluetooth, LoRa, and GNSS communication
+* Ultra-low power consumption
+* Maximum output power of 28±1dBm, and the LNA can be bypassed
+* Supports GPS, GLONASS, BDS (BeiDou), Galileo, NAVIC, and QZSS
+* Integrated lithium battery management system (charge/discharge management, overcharge protection, battery power detection, automatic switching between USB and battery power)
+* USB-C interface with comprehensive voltage regulation, ESD protection, short circuit protection, and RF shielding
+
+General specifications
+
+| Parameters            | Description                                                                                                                                        |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Master Chip           | nRF52840                                                                                                                                           |
+| LoRa Chip             | SX1262                                                                                                                                             |
+| GNSS Chip             | UC6580                                                                                                                                             |
+| Max. TX Power         | 28±1dBm                                                                                                                                            |
+| Wi-Fi                 | 802.11 b/g/n, up to 150Mbps                                                                                                                        |
+| Bluetooth             | Bluetooth LE, Bluetooth 5, Bluetooth mesh                                                                                                          |
+| OLED                  | ST7735S 0.96 TFT-LCD 80x160                                                                                                                        |
+| Power Supply          | *уточнить* 5V@USB/Solar, 3.3-4.2V@Battery                                                                                                          |
+| Hardware Resource     | USB 2.0, 2 x LEDs, 2 x Buttons, 4 x SPI, 2 x TWI, 2 x UART, 4 x PWM, QSPI, I2S, PDM, QDEC Etc7xADC1 + 2xADC2, 7xTouch, 3xUART, 2xI2C, 2xI2S, 4xSPI |
+| Memory                | 1M ROM; 256KB SRAM                                                                                                                                 |
+| Interface             | Type-C USB, 1.25-2P lithium battery connector, 1.25-2P solar panel connector, LoRa ANT (IPEX1.0), GNSS ANT (IPEX1.0), 2 x 13 x 2.54 Header Pin     |
+| Operating Temperature | -20 ~ 70 ℃                                                                                                                                        |
+| Dimensions 51.7       | 52.00*25.40*10.26 mm                                                                                                                               |
+
+*для переключения на ipex GNSS разъем, как водится у Хелтека, нужна перепайка*
 
 ## Модули
 
@@ -770,9 +813,12 @@ Krey81 <Иванов Р.В> [@Krey81](https://t.me/krey81), krey@irinium.ru
 
 ## Мои ноды
 
-| Протокол  | Hex       | Name                      | Description                                   |
-| ---       | ---       | ---                       | ---                                           |
-| meshcore  | AABD4C98  | Krey81                    | Мобильный компаньон LILYGO T-Echo             |
-| meshcore  | 09739C3E  | MO Golikovo-1 360         | Наблюдатель рядом с д. Голиково (Клин)        |
-| meshtasic | !3a38239a | MO Golikovo-2 360         | Meshtastic CLIENT-BASE (временный)            |
+| Протокол  | Hex       | Name              | Тип          | Description                                        |
+| --------- | --------- | ----------------- | ------------ | -------------------------------------------------- |
+| meshcore  | AABD4C98  | Krey81-echo       | Мобильный    | Компаньон LILYGO T-Echo                            |
+| meshcore  | EEEF2054  | Krey81-t096       | Мобильный    | Компаньон Heltec T096                              |
+| meshcore  | 09739C3E  | MO Golikovo-1 360 | Стационарный | Наблюдатель рядом с д. Голиково (Клин)             |
+| meshtasic | !3a38239a | MO Golikovo-2 360 | Стационарный | CLIENT-BASE, рядом с д. Голиково (Клин), временный |
+| meshtasic | !9fce2178 | Krey81-h4r8       | Мобильный    | CLIENT-MUTE, временный                             |
+
 
