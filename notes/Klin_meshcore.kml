@@ -1,0 +1,643 @@
+<?xml version="1.0" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>LoRa Repeaters (Heltec V4)</name>
+    <Style id="repeaterStyle">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Placemark>
+      <name>Макдак - Литейная</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.332655, 36.728538&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf407z0csbnb&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Макдак - Литейная&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>36.728538,56.332655,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Геркулес</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.318647, 36.698719&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf407h7pyhsp&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Геркулес&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>36.698719,56.318647,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Майданово</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.347923, 36.719068&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf40e9f42q1t&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Майданово&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>36.719068,56.347923,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Чепель</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.32696, 36.68336&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf406y0024rs&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Чепель&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>36.68336,56.32696,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Щапово малое</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.387420, 36.775519&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf40uc50e8yq&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Щапово малое&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>36.775519,56.38742,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>0973 MO Golikovo-1 360</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;0973&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;MO Golikovo-1 360&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.367576, 36.850368&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf40wt3sgvcb&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Голиково&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>36.850368,56.367576,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Масюгино</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.33351, 36.56212&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf1brzpwrpks&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Масюгино&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>36.56212,56.33351,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>4305 V4 Repeater Wys</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;4305&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;V4 Repeater Wys&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.326131, 36.553904&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf1brvcerxy7&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Высоковск&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>36.553904,56.326131,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Решетниково</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.443001, 36.558746&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf1cpgjk29bz&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Решетниково&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>36.558746,56.443001,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>E639 MO_Maxkmg_Rep02</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;E639&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;MO_Maxkmg_Rep02&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.18108, 36.74504&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ucfps5kyt2rs&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;17&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Троицкое, Поповка&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>36.74504,56.18108,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Спас-Заулок</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.474788, 36.578240&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf4122gmqz88&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;18&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Спас-Заулок&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>36.57824,56.474788,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Слобода</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.475944, 36.872875&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf41r14h0r02&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;18&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Слобода&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>36.872875,56.475944,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Боблово</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.380827, 37.013500&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf42drb6j5cv&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;18&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Боблово&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.0135,56.380827,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Чумичёво</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.390225, 37.003008&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf42f18bbefd&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;18&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Чумичёво&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.003008,56.390225,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>8FD9 Pro</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;8FD9&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Pro&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.422500, 36.993342&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf42cz3szk74&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Доршево, Бутырки&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>36.993342,56.4225,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>089B MO Titkovo 360°</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;089B&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;MO Titkovo 360°&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.51923, 36.75475&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf41s35brspg&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;21&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Захарово, Титково&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>36.75475,56.51923,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Аладьино</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.355310, 37.066887&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf42e7pm3p4n&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;21&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Аладьино&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.066887,56.35531,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Воздвиженское</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.383127, 36.291073&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf1bcb4re29m&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;28&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Воздвиженское&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>36.291073,56.383127,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Рогачево</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.433522, 37.158579&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf43j96j1dux&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;29&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Рогачево&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.158579,56.433522,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Бортницы</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.38512, 36.24837&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf1bbbe70hpw&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Бортницы&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>36.24837,56.38512,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Теряево</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.22988, 36.25451&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ucczburdz365&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;31&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Теряево&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>36.25451,56.22988,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>754A MO Fedotovo</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;754A&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;MO Fedotovo&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.16393, 37.25643&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ucfrxb369ers&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;38&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Федотово&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.25643,56.16393,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Конаково</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.713532, 36.779297&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf44sumu78xs&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;42&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Конаково&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>36.779297,56.713532,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>E212 Solnechnogorsk &quot;Hills&quot;</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;E212&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Solnechnogorsk &quot;Hills&quot;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.100879, 37.269666&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ucfx0hfgq1v4&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;42&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Солнечногорск&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.269666,56.100879,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>9F36 Yahroma_01</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;9F36&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Yahroma_01&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.289890, 37.483858&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf48hzqbmhn3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;47&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Яхрома&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.483858,56.28989,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>B900 SPICA</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;B900&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;SPICA&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.078569, 37.361746&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ucfx40vcrfcn&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;48&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Озерецкое&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.361746,56.078569,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>B800 SIGMA</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;B800&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;SIGMA&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.073367, 37.370905&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ucfwfruej1nr&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;49&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Озерецкое&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.370905,56.073367,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Дубна</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.736390, 37.162270&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf46v8s9rtsv&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;52&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Дубна&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.16227,56.73639,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Дмитров, Внуково</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.36751, 37.58489&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf48xm2kx3mn&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;53&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Дмитров, Внуково&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.58489,56.36751,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>415F MO Lobnya katushki2</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;415F&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;MO Lobnya katushki2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.007548, 37.440901&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ucfwegzes5xm&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;57&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Лобня&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.440901,56.007548,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Талдом</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.730924, 37.527938&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf4dtzx186dx&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;66&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Талдом&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.527938,56.730924,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Лотошино</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.22988, 35.67779&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uccrgu7fbc27&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;66&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Лотошино&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>35.67779,56.22988,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>46E5 KHIMKI-MKAD-LIGA</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;46E5&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;KHIMKI-MKAD-LIGA&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;55.88592, 37.43166&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ucftgv8zhfsd&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;66&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Химки&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.43166,55.88592,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>C0FE SVAO DolgiePrudyNW</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;C0FE&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;SVAO DolgiePrudyNW&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;55.937985, 37.538928&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ucfwnppn2kjq&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;67&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Долгие пруды&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.538928,55.937985,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Кимры</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.872659, 37.358274&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf4ed177q1bh&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;71&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Кимры&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.358274,56.872659,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Тверь</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56.858822, 35.916935&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;uf1e3qcfthxu&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;77&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Тверь&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>35.916935,56.858822,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>1488 SVAO WilhelmPieck-2 360°</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;1488&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;SVAO WilhelmPieck-2 360°&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;55.835218, 37.639203&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ucfv8s2p8zpb&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;79&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Вильгельма Пика&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.639203,55.835218,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>4B79 MO MYT KARGINA-2</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;4B79&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;MO MYT KARGINA-2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;55.91574, 37.78963&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ucfy5gjsf1qm&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;80&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Мытищи, Химгородок&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.78963,55.91574,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ивантеевка</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;55.96979, 37.93182&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ucfyrhvpemnf&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;85&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Ивантеевка&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.93182,55.96979,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>A6A8 UZAO SButovo 5 eanet</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;A6A8&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;UZAO SButovo 5 eanet&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;55.56848, 37.585373&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ucfsp7bvfemq&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;100&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Бутово северное&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.585373,55.56848,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>D03A MO Vidnoe 020°</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;D03A&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;MO Vidnoe 020°&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;55.560231, 37.706168&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ucfu442vc3sx&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;105&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Видное&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>37.706168,55.560231,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ярославль</name>
+      <description>&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Хэш&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Репитер&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;GNSS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;57.626605, 39.892693&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Geohash&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ufhrgf8gr1gb&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дальность (км)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;240&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Рядом с&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Ярославль&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+      <styleUrl>#repeaterStyle</styleUrl>
+      <Point>
+        <coordinates>39.892693,57.626605,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
