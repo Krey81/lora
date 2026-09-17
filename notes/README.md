@@ -24,6 +24,7 @@ tags: #lora #meshcore #meshcoretel
 | 10    | 2026-09-03 | доп инфа T096                   | добавил инфу о Heltec T096, в связи с его доставкой                                                         |
 | 11    | 2026-09-10 | репы и топонимы                 | добавил таблицу известных реп и интересных нам топонимов                                                    |
 | 12    | 2026-09-10 | Google Earth                    | добавил рекомендации по использованию Google Earth                                                          |
+| 13    | 2026-09-15 | hardware                        | добавил t114 и сводную таблицу                                                                              |
 
 ## Отличия от Meshtastic
 
@@ -329,6 +330,24 @@ TX: Demodulator → SX1262 (внутренний PA) → [FEM: PA → T/R Switch
 
 # Hardware
 
+Краткая сравнительная таблица
+
+| Параметр      | LoRa 32 V3    | LoRa 32 V4(R2/R8)             | T096                  | T114                  | T-Echo                                    | 
+| ---           | ---           | ---                           | ---                   | ---                   | ---                                       |
+| Контроллер    | ESP32-S3FN8   | ESP32-S3(R2/R8)               | nRF52840              | nRF52840              | nRF52840                                  |
+| FLASH (MB)    | 8             | 16                            | 1                     | 1                     | 2                                         |
+| RAM (KB)      | 512           | 512                           | 256                   | 256                   | 256                                       |
+| PSRAM (MB)    | -             | 2(R2)/8(R8)                   | -                     | -                     | 2                                         |
+| Tx (dBm)      | 21            | 28                            | 28                    | 21                    | 22                                        |
+| WiFi          | ipex (1)      | ipex (1)                      | -                     | -                     | -                                         |
+| Gnss          | внешний       | внешний                       | UC6580 + ipex (1)     | внешний               | L76K + ipex                               |
+| Рекомендации  | устарел       | бескомпромиссный (2)          | экономичный репитер   | экономичный компаньон | многофункциональное носимое устройство    |
+
+(1) требуется перепайка
+(2) бескомпромиссный
+    - при наличии стационарного питания или запаса аккумуляторов
+    - в том числе и автономное носимое устройсво с офлайн картами
+
 ## LilyGo
 
 ### LilyGo T-Echo
@@ -353,6 +372,7 @@ General specifications
 | Display               | 1.54-inch SPI E-Paper Display 200x200, Grey level 2, Full refresh 2s      |
 | Battery Capacity	    | 850mAh                                                                    |
 
+https://wiki.lilygo.cc/products/t-echo-series/t-echo/
 
 ### LilyGo T-Echo Plus
 
@@ -426,7 +446,7 @@ General specifications
 | Memory                | 384KB ROM; 512KB SRAM; 16KB RTC SRAM; 16MB Flash; PSRAM 2/8MB( для R8)                                                                                  |
 | Interface             | USB Type-C; SH1.25-2P lithium battery interface; SH1.25-2P solar panel interface; 2*IPEX1.0 ANT(LoRa&2.4G); 2*18*2.54 Header Pins, 2*2*2.54 Header Pins |
 | Operating Temperature | -40~85℃(OLED operating temperature: -40~ 70°C)                                                                                                         |
-| Dimensions 51.7       | 51.7 * 25.4* 10.7mm                                                                                                                                     |
+| Dimensions            | 51.7 * 25.4* 10.7mm                                                                                                                                     |
 
 ### HelTec T096
 
@@ -447,7 +467,6 @@ General specifications
 | LoRa Chip             | SX1262                                                                                                                                             |
 | GNSS Chip             | UC6580                                                                                                                                             |
 | Max. TX Power         | 28±1dBm                                                                                                                                            |
-| Wi-Fi                 | 802.11 b/g/n, up to 150Mbps                                                                                                                        |
 | Bluetooth             | Bluetooth LE, Bluetooth 5, Bluetooth mesh                                                                                                          |
 | OLED                  | ST7735S 0.96 TFT-LCD 80x160                                                                                                                        |
 | Power Supply          | *уточнить* 5V@USB/Solar, 3.3-4.2V@Battery                                                                                                          |
@@ -455,9 +474,27 @@ General specifications
 | Memory                | 1M ROM; 256KB SRAM                                                                                                                                 |
 | Interface             | Type-C USB, 1.25-2P lithium battery connector, 1.25-2P solar panel connector, LoRa ANT (IPEX1.0), GNSS ANT (IPEX1.0), 2 x 13 x 2.54 Header Pin     |
 | Operating Temperature | -20 ~ 70 ℃                                                                                                                                        |
-| Dimensions 51.7       | 52.00*25.40*10.26 mm                                                                                                                               |
+| Dimensions            | 52.00*25.40*10.26 mm                                                                                                                               |
 
 *для переключения на ipex GNSS разъем, как водится у Хелтека, нужна перепайка*
+
+### HelTec T114
+
+General specifications
+
+| Parameters            | Description                                                                                                                                        |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Master Chip           | nRF52840                                                                                                                                           |
+| LoRa Chip             | SX1262                                                                                                                                             |
+| Max. TX Power         | 22±1dBm                                                                                                                                            |
+| Bluetooth             | Bluetooth LE, Bluetooth 5, Bluetooth mesh                                                                                                          |
+| OLED                  | 1.14 inch TFT-LCD 135x240 262k colors                                                                                                              |
+| Power Supply          | 5V@USB/Solar, 3.3-4.2V@Battery                                                                                                                     |
+| Hardware Resource     | USB 2.0, 2*RGB, 2*Button, 4*SPI, 2*TWI, 2*UART, 4*PWM, QPSI, I2S, PDM, QDEC Etc.                                                                   |
+| Memory                | 1M ROM; 256KB SRAM                                                                                                                                 |
+| Interface             | Type-C USB, 1.25-2P lithium battery connector, 1.25-2P solar panel connector, LoRa ANT (IPEX1.0), GNSS ANT (IPEX1.0), 2 x 13 x 2.54 Header Pin     |
+| Operating Temperature | -20 ~ 70 ℃ 90%RH(No condensing)                                                                                                                   |
+| Dimensions            | 50.80mm x 22.86mm                                                                                                                                  |
 
 ## Модули
 
