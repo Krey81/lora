@@ -29,6 +29,7 @@ tags: #lora #meshcore #meshcoretel
 | 12    | 2026-09-10 | Google Earth                    | добавил рекомендации по использованию Google Earth                                                          |
 | 13    | 2026-09-15 | hardware                        | добавил t114 и сводную таблицу                                                                              |
 | 14    | 2026-10-06 | troubleshooting                 | добавил troubleshooting.md                                                                                  |
+| 15    | 2026-10-06 | fin troubleshooting             | troubleshooting.md больше не рыба                                                                           |
 
 ## Отличия от Meshtastic
 
